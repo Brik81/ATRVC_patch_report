@@ -1,0 +1,159 @@
+%%PACCHETTI
+\documentclass[]{article}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[left=2cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{geometry}
+\usepackage{makeidx}
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{positioning}
+\usepackage{tocloft}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{cancel}
+\usepackage{fontawesome}
+\usepackage{adjustbox}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+\pgfplotsset{compat=1.18}
+
+
+%Grafica del foglio
+\geometry{a4paper, margin=2.0cm}
+\usetikzlibrary{math}
+\author{Alessandro Briccoli }
+\graphicspath{ {./image/} } 
+\pagestyle{fancy}
+
+% Personalizzazione del piè di pagina
+\fancyfoot[L]{AB81}  % Sigla in basso a sinistra
+\fancyfoot[C]{\thepage}  % Numero della pagina in basso al centro
+\fancyfoot[R]{}  % Vuoto in basso a destra
+
+\fancyhead[L]{} %vuoto in alto sx
+\fancyhead[R]{\leftmark} %in alto a dx metto la sextion in cui siamo -> \leftmark 
+
+% Rimuove le linee dell'intestazione e del piè di pagina predefinite
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%definzione di comandi personalizzati
+\newcommand{\brikbox}[1]{ %box per esempi
+	
+	
+	\begin{tcolorbox}[
+		left=5mm,
+		right=5mm,
+		colframe=black,
+		colback=white,
+		boxrule=0.5mm,
+		sharp corners,
+		width=\textwidth
+		]
+		#1 % Contenuto del tcolorbox passato come argomento
+	\end{tcolorbox}
+	%end_of_box
+}
+
+\newcommand{\numeratebrik}[1]{%elenco numerico
+	\begin{enumerate}
+		#1
+	\end{enumerate}
+	
+}
+
+\newcommand{\listbrik}[1]{%elenco puntato
+	\begin{itemize}
+		#1
+	\end{itemize}
+	
+}
+
+\newcommand{\img}[2]{ %inserire le immagini dentro box senza caption
+	
+	
+	\begin{center}		
+		\includegraphics[width=#1\linewidth]{image/#2}
+	\end{center}
+	
+}
+
+\newcommand{\imgcaption}[3]{ %inserire immagini con caption 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=#1\linewidth]{image/#2}
+		\caption{#3}
+		\label{fig:#2}
+	\end{figure}
+}
+
+
+\newcommand{\systemine}[1]{
+	\[
+	\begin{cases}
+		#1
+	\end{cases}
+	\]
+}
+
+
+\begin{document}
+	\thispagestyle{empty}
+	\begin{figure}[h] %logo muner
+		\centering
+		\includegraphics[height=4cm, width=10cm]{img/Muner_Color} % Adjust the width as needed (e.g., 0.5\textwidth for 50% of the text width)
+	\end{figure}
+	
+	\begin{center}  %titolo 
+		\hspace{2em}
+		\\
+		{\LARGE\textbf{Automotive Technologies for Ranging, Vision and Connectivity}}
+		\hspace{2em}
+	\end{center}
+	
+	\thispagestyle{empty}
+	\vspace*{\fill} % Center vertically
+	\begin{center}
+		{\LARGE\textbf{LAB REPORT ON A PATCH ANTENNA}}
+	\end{center}
+	\vspace*{\fill}
+	
+	\vspace{1cm} % Add some space before the authors' names
+	\vspace{1cm} % Add some space before the authors' names
+	\begin{flushleft}
+		Authors:\\
+		\hspace{1.5em}Alessandro Briccoli, alessandro.briccoli@studenti.unipr.it\\
+		\hspace{1.5em}Luca Dall'Aglio, luca.dallaglio2@studenti.unipr.it
+		
+	\end{flushleft}
+	
+	\vspace{2cm} % Space before academic year
+	\begin{center}
+		\textit{Academic Year 2024/2025} % Replace with the correct year if needed
+	\end{center}
+	\newpage
+	\thispagestyle{empty}
+	\tableofcontents
+	
+	\newpage
+	\subsection*{GROUP 1}
+	\textit{Design a patch antenna working (SWR $<$ 2) at the frequency of 2.6 GHz with a tolerance of $\pm 2.5\%$. The substrate is FR4 with $\varepsilon_r = 4.1 \cdot (3/f[\text{GHz}])^{0.025}$, $\tan(\delta) = 0.025$, and thickness $h = 1.6$ mm. The metal is copper with $t = 35$ $\mu$m thickness. The antenna must be centered on top of a square ground plane with side length equal to $c / (f\sqrt{\varepsilon_r})$ and must be fed by a microstrip transmission line connected to an edge-mount $50 \, \Omega$ connector.}
+	\section{Summary}
+	The objective of this report is to present a detailed account of the laboratory experience with patch antennas. The document thoroughly outlines all the stages of the patch antenna design process, beginning with the theoretical framework, followed by the design phase, and concluding with the experimental analysis. Furthermore, it includes a comparison between the simulation results and the real-world measurements obtained during testing
+	\section{Introduction}
+	The objective of the laboratory experiment was to design a patch antenna with a resonant frequency of 2.6 GHz, as specified in the group specifications.\\
+	A patch antenna, also referred to as a microstrip antenna, is a relatively straightforward type of antenna that offers numerous advantages, including its lightweight, cost-effective, and simple integration with accompanying electronic components. However, it should be noted that this antenna type possesses a comparatively larger size in comparison to alternative antenna designs. For instance, some patch antennas are approximately half a wavelength on each side.The architecture is very simple: it consists of a ground plane, a dielectric material substrate and a patch of metal.The first few laboratory lectures have been dedicated to designing the patch antenna from scratch on CST Studio.To do this, the first task that we had consisted in retrieving, from the theory lectures, the way to compute the main parameters of a microstrip antenna. Subsequently, the design of the antenna block was initiated, followed by the execution of simulations to assess its performance. The utilisation of CST Studio enabled the exploration of various parameters, facilitating the optimisation of the antenna's configuration. The final laboratory lecture focused on the collection of measurements from the fabricated antenna, thereby enabling the comparison of the simulation outcomes with real-world observations.
+	\newpage
+	\section{Theory} 
+	
+	%FINE DOCUMENTO
+\end{document}
