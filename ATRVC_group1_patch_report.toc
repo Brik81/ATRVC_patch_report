@@ -1,6 +1,11 @@
-\contentsline {section}{\numberline {1}Summary}{1}{section.1}%
-\contentsline {section}{\numberline {2}Introduction}{1}{section.2}%
-\contentsline {section}{\numberline {3}Theory}{2}{section.3}%
+\contentsline {section}{\numberline {1}SUMMARY}{1}{section.1}%
+\contentsline {section}{\numberline {2}INTRODUCTION}{1}{section.2}%
+\contentsline {section}{\numberline {3}THEORY}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Patch Antenna Dimensions}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Fringing effect}{2}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Impedance matching}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}DESIGN OF THE PATCH ANTENNA}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Substrate and Ground plane size}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Patch size}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Microstrip design}{5}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Slots design and impedance matching}{5}{subsubsection.4.3.1}%
