@@ -25,7 +25,7 @@
 \usepackage{adjustbox}
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
 \pgfplotsset{compat=1.18}
-
+\usepackage{nopageno}
 
 %Grafica del foglio
 \geometry{a4paper, margin=2.0cm}
@@ -35,7 +35,7 @@
 \pagestyle{fancy}
 
 % Personalizzazione del piè di pagina
-\fancyfoot[L]{AB81}  % Sigla in basso a sinistra
+%\fancyfoot[L]{AB81}  % Sigla in basso a sinistra
 \fancyfoot[C]{\thepage}  % Numero della pagina in basso al centro
 \fancyfoot[R]{}  % Vuoto in basso a destra
 
@@ -110,7 +110,7 @@
 	\thispagestyle{empty}
 	\begin{figure}[h] %logo muner
 		\centering
-		\includegraphics[height=4cm, width=10cm]{img/Muner_Color} % Adjust the width as needed (e.g., 0.5\textwidth for 50% of the text width)
+		\includegraphics[height=4cm, width=10cm]{img/Muner_Color} 
 	\end{figure}
 	
 	\begin{center}  %titolo 
@@ -121,14 +121,14 @@
 	\end{center}
 	
 	\thispagestyle{empty}
-	\vspace*{\fill} % Center vertically
+	\vspace*{\fill} 
 	\begin{center}
 		{\LARGE\textbf{LAB REPORT ON A PATCH ANTENNA}}
 	\end{center}
 	\vspace*{\fill}
 	
-	\vspace{1cm} % Add some space before the authors' names
-	\vspace{1cm} % Add some space before the authors' names
+	\vspace{1cm} 
+	\vspace{1cm} 
 	\begin{flushleft}
 		Authors:\\
 		\hspace{1.5em}Alessandro Briccoli, alessandro.briccoli@studenti.unipr.it\\
@@ -136,24 +136,106 @@
 		
 	\end{flushleft}
 	
-	\vspace{2cm} % Space before academic year
+	\vspace{2cm} 
 	\begin{center}
-		\textit{Academic Year 2024/2025} % Replace with the correct year if needed
+		Academic Year 2024/2025
 	\end{center}
+	
 	\newpage
+	
 	\thispagestyle{empty}
 	\tableofcontents
 	
 	\newpage
+	\setcounter{page}{1}
 	\subsection*{GROUP 1}
 	\textit{Design a patch antenna working (SWR $<$ 2) at the frequency of 2.6 GHz with a tolerance of $\pm 2.5\%$. The substrate is FR4 with $\varepsilon_r = 4.1 \cdot (3/f[\text{GHz}])^{0.025}$, $\tan(\delta) = 0.025$, and thickness $h = 1.6$ mm. The metal is copper with $t = 35$ $\mu$m thickness. The antenna must be centered on top of a square ground plane with side length equal to $c / (f\sqrt{\varepsilon_r})$ and must be fed by a microstrip transmission line connected to an edge-mount $50 \, \Omega$ connector.}
 	\section{Summary}
 	The objective of this report is to present a detailed account of the laboratory experience with patch antennas. The document thoroughly outlines all the stages of the patch antenna design process, beginning with the theoretical framework, followed by the design phase, and concluding with the experimental analysis. Furthermore, it includes a comparison between the simulation results and the real-world measurements obtained during testing
 	\section{Introduction}
-	The objective of the laboratory experiment was to design a patch antenna with a resonant frequency of 2.6 GHz, as specified in the group specifications.\\
-	A patch antenna, also referred to as a microstrip antenna, is a relatively straightforward type of antenna that offers numerous advantages, including its lightweight, cost-effective, and simple integration with accompanying electronic components. However, it should be noted that this antenna type possesses a comparatively larger size in comparison to alternative antenna designs. For instance, some patch antennas are approximately half a wavelength on each side.The architecture is very simple: it consists of a ground plane, a dielectric material substrate and a patch of metal.The first few laboratory lectures have been dedicated to designing the patch antenna from scratch on CST Studio.To do this, the first task that we had consisted in retrieving, from the theory lectures, the way to compute the main parameters of a microstrip antenna. Subsequently, the design of the antenna block was initiated, followed by the execution of simulations to assess its performance. The utilisation of CST Studio enabled the exploration of various parameters, facilitating the optimisation of the antenna's configuration. The final laboratory lecture focused on the collection of measurements from the fabricated antenna, thereby enabling the comparison of the simulation outcomes with real-world observations.
+	The objective of the laboratory experiment was to design a patch antenna with a resonant frequency of 2.6 GHz, as specified in the group specifications. A patch antenna, also referred to as a microstrip antenna, is a relatively straightforward type of antenna that offers numerous advantages, including its lightweight, cost-effectiveness, and simple integration with accompanying electronic components. Developed in the early 1970s for spatial and aeronautics applications, this antenna gained popularity thanks to its lightweight and low volume, low fabrication cost due to mass production with PCB techniques, easy integration with printed circuits, and conformability. It is also suitable for mobile wireless applications. However, it should be noted that this antenna type possesses a comparatively larger size in comparison to alternative antenna designs. For instance, some patch antennas are approximately half a wavelength on each side. Additionally, there are some disadvantages, such as low efficiency, narrow bandwidth, low gain, and poor polarization purity. The architecture of a patch antenna is very simple: it consists of a ground plane, a dielectric material substrate, and a patch of metal. During the laboratory lectures, firstly we were designing the patch antenna using CST Studio. To do this, the first task was to retrieve, from the theory lectures, the method to compute the main parameters of a microstrip antenna. Subsequently, the design of the antenna block was initiated, followed by the execution of simulations to assess its performance. The utilisation of CST Studio enabled the exploration of various parameters, facilitating the optimisation of the antenna's configuration. The final laboratory lecture focused on the collection of measurements from the fabricated antenna, thereby enabling the comparison of the simulation outcomes with real-world observations.
 	\newpage
 	\section{Theory} 
+	\subsection{Patch Antenna Dimensions}
+	In order to design a patch antenna, it is first necessary to define the different formulas used to derive antenna dimensions from a theoretical point of view.\\
+	A patch antenna, as we can see in the figure below, shares similarities with a microstrip transmission line, but there is a crucial distinction between the two. The patch antenna is designed to radiate, and consists of a metal patch that is placed on top of a dielectric substrate, which is then positioned on a metallic ground layer. The purpose of the substrate is to block radiation beyond it, thereby ensuring that the radiation is supplied exclusively in the positive axis, which, in this case, is the Z axis.\\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{img/img1}
+		\caption{Structure of a Patch Antenna}
+		\label{fig:img1}
+	\end{figure}
+	
+	As mentioned above, we can see the patch antenna as a microstrip line of $L_p$ length and $W_p$ thickness, in particular: 
+	\begin{equation}
+		L_p=m\frac{\lambda}{2}
+	\end{equation} 
+	and 
+	\begin{equation}
+		W_p=\frac{c}{2f_r}\sqrt{\frac{2}{\epsilon_r+1}}
+	\end{equation}
+	where: 
+	\begin{itemize}
+		\item $\lambda$ is the wavelength 
+		\item $c=3 \cdot 10^8 m/s$ is the speed of light
+		\item $f_r$ is the resonance frequency of the antenna
+		\item $\epsilon_r$ is the dielectric constant of the substrate material, in our case is FR4
+		
+	\end{itemize}
+	\subsection{Fringing effect} 
+	The resonance condition for a patch antenna is typically given by \( L = \frac{\lambda}{2} \). However, as we can see in the figure below, due to edge effects, the actual path length is slightly longer, with a variation \( \Delta L \).
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{img/img2}
+		\caption{The electric field lines curve at the edges, increasing the electric length of the patch.}
+		\label{fig:img2}
+	\end{figure}
+	
+	
+	These fringing effects cause the patch to appear longer to electromagnetic waves, leading to the definition of an effective length \( L_{\text{eff}} \) defined as: 
+	\begin{equation}
+		L_{eff}= L+2\Delta L
+	\end{equation}
+	\newpage
+	where $\Delta L$ is derived from an empirical formula:
+	\begin{equation}
+		\Delta L \simeq h \cdot 0.412 \frac{\left( \epsilon_\text{eff} + 0.3 \right) \left( \frac{W_p}{h} + 0.264 \right)}{\left( \epsilon_\text{eff} - 0.258 \right) \left( \frac{W_p}{h} + 0.8 \right)}
+	\end{equation}
+	
+	and where $\epsilon_{eff}$ is the effective relative permittivity of a microstrip of width W:
+	\begin{equation}
+		\epsilon_\text{eff} \simeq \frac{\epsilon_r + 1}{2} + \frac{\epsilon_r - 1}{2} \frac{1}{\sqrt{1 + 12 \frac{h}{W_p}}}
+	\end{equation}
+	
+	By imposing $L_\text{eff} = \frac{\lambda}{2}$ and knowing that $\lambda = \frac{c}{\sqrt{\epsilon_\text{eff}} f_r}$, it follows that:
+	\begin{equation}
+		L_p = \frac{c}{2 f_r \sqrt{\epsilon_\text{eff}}} - 2 \Delta L
+	\end{equation}
+	\subsection{Impedance matching}
+When designing a patch antenna, it is essential to achieve impedance matching between the feed and the characteristic impedance of the transmission line, which is typically 50~$\Omega$. This ensures optimal power transfer from the transmission line to the standing wave generated on the patch. It is not feasible to feed the patch at one edge, as the input impedance $R_i(0)$ exceeds 50~$\Omega$. The connection between the patch and the feeding line is located within the patch.
+
+To optimize the impedance matching, the length $L$ should first be varied until an input reactance of zero is achieved at the desired resonance frequency. Following this, adjust the feed position $x_0$ to make the real part of the input impedance equal to 50~$\Omega$ at the same frequency. This process minimizes reflection and maximizes efficiency.\\
+In order to achieve this value we have to exploit this formula: 
+\begin{equation}
+	R_i(x_0)=\frac{1}{2G_1}cos^2(\frac{\pi}{L}x_0)
+	\label{eq7}
+\end{equation}
+	where: 
+	\begin{equation}
+		G_1=\frac{W}{120 \lambda_0}(1-\frac{1}{24}(\frac{2 \pi h}{\lambda_0})^2)
+	\end{equation}
+	and 
+	\begin{equation}
+		\lambda_0=\frac{c}{f_r}
+	\end{equation}
+	
+	So, by using the the \eqref{eq7} and isolate the $x_0$ term ,we are able to find the value of the feeding line slot in order to have the impedance of 50 $\Omega$, having a final result similar to the image below. 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{img/img3}
+		\caption{patch antenna with the two slot of lenght $x_0$ in orer to have the fedding line matched}
+		\label{fig:img3}
+	\end{figure}
 	
 	%FINE DOCUMENTO
 \end{document}
