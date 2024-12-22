@@ -9,3 +9,7 @@
 \contentsline {subsection}{\numberline {4.2}Patch size}{4}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Microstrip design}{5}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Slots design and impedance matching}{5}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Simulation and tuning}{6}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}First simulation result}{6}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Simulation and result with slots}{6}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Tuning of the patch antenna}{7}{subsection.4.7}%

@@ -303,5 +303,55 @@ so, finally we can calculate the value of $L_p$, let's substitute all the value 
  \[
  x_0 = \frac{14.4 \cdot 10^{-3}}{\pi} \arccos\left(\sqrt{2 \cdot 0.0026 \cdot  50}\right) =  0.009241228 \simeq 9.2 \ mm
  \]
+so, according to calculations, we will need two slots of approximately 9.2 mm in length.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.32\linewidth]{img/img9}
+	\caption{Graph representing the search for the optimum value for slot length, indicating approximately 9.2mm as the length to achieve matching}
+	\label{fig:img9}
+\end{figure}
+
+\newpage
+
+\subsection{Simulation and tuning}
+\subsection{First simulation result}
+Following the calculation of the parameters of the patch, the initial simulation was conducted, as illustrated in the subsequent graphs.\\
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/img7}
+		\caption{S1,1 graphs representing the return loss of the patch antenna during the first simulation without slots}
+		\label{GSNOslot}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/img8}
+		\caption{S1,1 graphs representing the return loss of the patch antenna during the first simulation without slots}
+		\label{GZNOslot}
+	\end{minipage}
+\end{figure}
+
+As depicted in Figure \eqref{GSNOslot}, the outcome of the simulation did not meet expectations, exhibiting a peak return loss of approximately -9.5 dB. The figure \eqref{GZNOslot} demonstrates that the microstrip is not entirely matched, exhibiting an impedance of 71.9 $\Omega$ in the real part and a value of approximately 50.8 $\Omega$ in the imaginary part. However, it is observed that the peak frequency falls within the 2.5\% tolerance stipulated by the specifications.
+\subsection{Simulation and result with slots}
+After this first simulation, the slots were inserted following the measurements from the theoretical calculations. As can be seen in the figures below, the result improved slightly to a peak of -15.2 dB (figure \eqref{GSslot}) and an impedance value of approximately 35.1 $\Omega$ in the real part and 0.14  $\Omega$  in the imaginary part (figure \eqref{GZslot}).
+ \begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/img5}
+	\caption{S1,1 graphs representing the return loss of the patch antenna with a slots of 9.2mm}
+	\label{GSslot}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/img6}
+	\caption{Z1,1 graphs representing the impedance of the patch antenna with a slots of 9.2mm}
+	\label{GZslot}
+\end{figure}
+ \subsection{Tuning of the patch antenna}
+ Starting from the previous results, in order to improve the performance of the antenna, it was necessary to modify certain parameters, in particular the length of the slots, until a value was found that would allow the desired impedance to be achieved and get even closer to the frequency required by the specifications.\\
+  In order to assess what was the best possible result, a sweep had to be made, simulating different slot lengths and finding the value that would satisfy the different requirements
+  
+  
 	%FINE DOCUMENTO
 \end{document}

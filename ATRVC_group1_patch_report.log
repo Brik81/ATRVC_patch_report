@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.27)  21 DEC 2024 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.27)  22 DEC 2024 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1161,7 +1161,7 @@ Package hyperref Info: Link coloring ON on input line 109.
 \@outlinefile=\write4
 \openout4 = `ATRVC_group1_patch_report.out'.
 
-<img/Muner_Color.png, id=50, 182.1204pt x 73.2336pt>
+<img/Muner_Color.png, id=66, 182.1204pt x 73.2336pt>
 File: img/Muner_Color.png Graphic file (type png)
 <use img/Muner_Color.png>
 Package pdftex.def Info: img/Muner_Color.png  used on input line 113.
@@ -1181,12 +1181,12 @@ been already used, duplicate ignored
                    \relax 
 l.160 	\newpage
                 [1]
-<img/img1.jpg, id=86, 175.65625pt x 111.91812pt>
+<img/img1.jpg, id=106, 175.65625pt x 111.91812pt>
 File: img/img1.jpg Graphic file (type jpg)
 <use img/img1.jpg>
 Package pdftex.def Info: img/img1.jpg  used on input line 167.
 (pdftex.def)             Requested size: 193.47578pt x 123.28108pt.
-<img/img2.png, id=87, 935.74594pt x 359.84438pt>
+<img/img2.png, id=107, 935.74594pt x 359.84438pt>
 File: img/img2.png Graphic file (type png)
 <use img/img2.png>
 Package pdftex.def Info: img/img2.png  used on input line 193.
@@ -1198,32 +1198,59 @@ been already used, duplicate ignored
                    \relax 
 l.203 	\newpage
                 [2 <./img/img1.jpg> <./img/img2.png>]
-<img/img3.png, id=100, 414.79968pt x 317.68687pt>
+<img/img3.png, id=120, 414.79968pt x 317.68687pt>
 File: img/img3.png Graphic file (type png)
 <use img/img3.png>
 Package pdftex.def Info: img/img3.png  used on input line 243.
 (pdftex.def)             Requested size: 193.47578pt x 148.17853pt.
  [3 <./img/img3.png>]
 [4]
-<img/img4.png, id=130, 593.21625pt x 508.90125pt>
+<img/img4.png, id=150, 593.21625pt x 508.90125pt>
 File: img/img4.png Graphic file (type png)
 <use img/img4.png>
 Package pdftex.def Info: img/img4.png  used on input line 285.
 (pdftex.def)             Requested size: 193.47578pt x 165.97333pt.
- [5 <./img/img4.png>] (ATRVC_group1_patch_report.aux)
+<img/img9.png, id=153, 882.29625pt x 723.45282pt>
+File: img/img9.png Graphic file (type png)
+<use img/img9.png>
+Package pdftex.def Info: img/img9.png  used on input line 309.
+(pdftex.def)             Requested size: 154.78653pt x 126.91522pt.
+ [5 <./img/img4.png> <./img/img9.png>]
+<img/img7.jpg, id=164, 1204.5pt x 666.99188pt>
+File: img/img7.jpg Graphic file (type jpg)
+<use img/img7.jpg>
+Package pdftex.def Info: img/img7.jpg  used on input line 323.
+(pdftex.def)             Requested size: 217.66211pt x 120.52151pt.
+<img/img8.jpg, id=165, 1204.5pt x 666.99188pt>
+File: img/img8.jpg Graphic file (type jpg)
+<use img/img8.jpg>
+Package pdftex.def Info: img/img8.jpg  used on input line 329.
+(pdftex.def)             Requested size: 217.66211pt x 120.52151pt.
+<img/img5.png, id=170, 1708.13156pt x 517.18219pt>
+File: img/img5.png Graphic file (type png)
+<use img/img5.png>
+Package pdftex.def Info: img/img5.png  used on input line 340.
+(pdftex.def)             Requested size: 386.95897pt x 117.158pt.
+<img/img6.png, id=171, 1705.87312pt x 506.6428pt>
+File: img/img6.png Graphic file (type png)
+<use img/img6.png>
+Package pdftex.def Info: img/img6.png  used on input line 347.
+(pdftex.def)             Requested size: 386.95897pt x 114.92513pt.
+ [6 <./img/img7.jpg> <./img/img8.jpg> <./img/img5.png> <./img/img6.png>] [7] (A
+TRVC_group1_patch_report.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `ATRVC_group1_patch_report.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 378BB00210CC80F356FCC77707A4AEF4;1647.
+(rerunfilecheck)             Checksum: 213E51F23E10A8CAB1AF05D28C01C451;2430.
  ) 
 Here is how much of TeX's memory you used:
- 53820 strings out of 475248
- 1362481 string characters out of 5757813
- 2040896 words of memory out of 5000000
- 74678 multiletter control sequences out of 15000+600000
+ 53900 strings out of 475248
+ 1363836 string characters out of 5757813
+ 2041550 words of memory out of 5000000
+ 74748 multiletter control sequences out of 15000+600000
  562445 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,103p,860b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1243,9 +1270,9 @@ fb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 sfonts/cm/cmsy5.pfb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy7.pfb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ATRVC_group1_patch_report.pdf (7 pages, 439863 bytes).
+Output written on ATRVC_group1_patch_report.pdf (9 pages, 885371 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
