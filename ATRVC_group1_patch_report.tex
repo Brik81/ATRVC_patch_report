@@ -26,7 +26,7 @@
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
 \pgfplotsset{compat=1.18}
 \usepackage{nopageno}
-
+\usepackage{booktabs}
 %Grafica del foglio
 \geometry{a4paper, margin=2.0cm}
 \usetikzlibrary{math}
@@ -350,8 +350,51 @@ After this first simulation, the slots were inserted following the measurements 
 \end{figure}
  \subsection{Tuning of the patch antenna}
  Starting from the previous results, in order to improve the performance of the antenna, it was necessary to modify certain parameters, in particular the length of the slots, until a value was found that would allow the desired impedance to be achieved and get even closer to the frequency required by the specifications.\\
-  In order to assess what was the best possible result, a sweep had to be made, simulating different slot lengths and finding the value that would satisfy the different requirements
+  In order to assess what was the best possible result, a sweep had to be made, simulating different slot lengths and finding the value that would satisfy the different requirements.\\
   
   
+  \begin{figure}[h]
+  	\centering
+  	\includegraphics[width=0.8\linewidth]{img/img10}
+  	\caption{Graph representing the returnig loss of all different values of the slots tested}
+  	\label{GSsweep}
+  \end{figure}
+  As can be seen from the image above, as the slot values were reduced, the peak of the return loss grew and grew until it reached its maximum value, which corresponds to a slot length of 7.6 mm.\\
+  With the final choice of slot, the design of the antenna patch is complete, below is the table (ref) containing the patch dimensions and a reference image.\\
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/img11}
+		\caption{References for the patch antenna dimensions reported in the table alongside}
+		\label{RefPatch}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\captionsetup{type=table} % Cambia il tipo di didascalia a 'Table'
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Dimension} & \textbf{Value (mm)} \\
+			\hline
+			Substrate Width, $W_s$ & 56.9 \\
+			Substrate Length, $L_s$ & 56.9 \\
+			Microstrip Width, $W_m$ & 3.2 \\
+			Microstrip Length, $L_m$ & 14.4 \\
+			Distance, $D$ & 10.4 \\
+			Slot Width, $W_i$ & 1.0 \\
+			Slot Length, $L_i$ & 7.6 \\
+			Patch Width, $W_p$ & 36.1 \\
+			Patch Length, $L_p$ & 28.0 \\
+			\hline
+		\end{tabular}
+		\caption{Table of patch antenna dimensions}
+		\label{tab:patchDimensions}
+	\end{minipage}
+\end{figure}
+
+\newpage
+\section{RESULTS AND MEASUREMENTS}
+\subsection{Final simulation}
 	%FINE DOCUMENTO
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.27)  22 DEC 2024 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.27)  22 DEC 2024 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1058,16 +1058,36 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/nopageno\nopageno.sty
 Package: nopageno 1989/01/01 no page numbers (DPC)
 )
+(C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen344
+\lightrulewidth=\dimen345
+\cmidrulewidth=\dimen346
+\belowrulesep=\dimen347
+\belowbottomsep=\dimen348
+\aboverulesep=\dimen349
+\abovetopsep=\dimen350
+\cmidrulesep=\dimen351
+\cmidrulekern=\dimen352
+\defaultaddspace=\dimen353
+\@cmidla=\count337
+\@cmidlb=\count338
+\@aboverulesep=\dimen354
+\@belowrulesep=\dimen355
+\@thisruleclass=\count339
+\@lastruleclass=\count340
+\@thisrulewidth=\dimen356
+)
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarymath.code.tex
-\tikz@math@for@depth=\count337
-\tikz@math@dimen=\dimen344
+\tikz@math@for@depth=\count341
+\tikz@math@dimen=\dimen357
 \tikz@math@toks=\toks55
 )
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count338
+\l__color_backend_stack_int=\count342
 \l__pdf_internal_box=\box80
 ) (ATRVC_group1_patch_report.aux)
 \openout1 = `ATRVC_group1_patch_report.aux'.
@@ -1094,16 +1114,16 @@ LaTeX Font Info:    ... okay on input line 109.
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen345
+\scratchcounter=\count343
+\scratchdimen=\dimen358
 \scratchbox=\box81
-\nofMPsegments=\count340
-\nofMParguments=\count341
+\nofMPsegments=\count344
+\nofMParguments=\count345
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen346
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen359
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
 \everyMPtoPDFconversion=\toks57
 )
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1161,7 +1181,7 @@ Package hyperref Info: Link coloring ON on input line 109.
 \@outlinefile=\write4
 \openout4 = `ATRVC_group1_patch_report.out'.
 
-<img/Muner_Color.png, id=66, 182.1204pt x 73.2336pt>
+<img/Muner_Color.png, id=74, 182.1204pt x 73.2336pt>
 File: img/Muner_Color.png Graphic file (type png)
 <use img/Muner_Color.png>
 Package pdftex.def Info: img/Muner_Color.png  used on input line 113.
@@ -1181,12 +1201,12 @@ been already used, duplicate ignored
                    \relax 
 l.160 	\newpage
                 [1]
-<img/img1.jpg, id=106, 175.65625pt x 111.91812pt>
+<img/img1.jpg, id=116, 175.65625pt x 111.91812pt>
 File: img/img1.jpg Graphic file (type jpg)
 <use img/img1.jpg>
 Package pdftex.def Info: img/img1.jpg  used on input line 167.
 (pdftex.def)             Requested size: 193.47578pt x 123.28108pt.
-<img/img2.png, id=107, 935.74594pt x 359.84438pt>
+<img/img2.png, id=117, 935.74594pt x 359.84438pt>
 File: img/img2.png Graphic file (type png)
 <use img/img2.png>
 Package pdftex.def Info: img/img2.png  used on input line 193.
@@ -1198,59 +1218,79 @@ been already used, duplicate ignored
                    \relax 
 l.203 	\newpage
                 [2 <./img/img1.jpg> <./img/img2.png>]
-<img/img3.png, id=120, 414.79968pt x 317.68687pt>
+<img/img3.png, id=130, 414.79968pt x 317.68687pt>
 File: img/img3.png Graphic file (type png)
 <use img/img3.png>
 Package pdftex.def Info: img/img3.png  used on input line 243.
 (pdftex.def)             Requested size: 193.47578pt x 148.17853pt.
  [3 <./img/img3.png>]
 [4]
-<img/img4.png, id=150, 593.21625pt x 508.90125pt>
+<img/img4.png, id=160, 593.21625pt x 508.90125pt>
 File: img/img4.png Graphic file (type png)
 <use img/img4.png>
 Package pdftex.def Info: img/img4.png  used on input line 285.
 (pdftex.def)             Requested size: 193.47578pt x 165.97333pt.
-<img/img9.png, id=153, 882.29625pt x 723.45282pt>
+<img/img9.png, id=163, 882.29625pt x 723.45282pt>
 File: img/img9.png Graphic file (type png)
 <use img/img9.png>
 Package pdftex.def Info: img/img9.png  used on input line 309.
 (pdftex.def)             Requested size: 154.78653pt x 126.91522pt.
  [5 <./img/img4.png> <./img/img9.png>]
-<img/img7.jpg, id=164, 1204.5pt x 666.99188pt>
+<img/img7.jpg, id=174, 1204.5pt x 666.99188pt>
 File: img/img7.jpg Graphic file (type jpg)
 <use img/img7.jpg>
 Package pdftex.def Info: img/img7.jpg  used on input line 323.
 (pdftex.def)             Requested size: 217.66211pt x 120.52151pt.
-<img/img8.jpg, id=165, 1204.5pt x 666.99188pt>
+<img/img8.jpg, id=175, 1204.5pt x 666.99188pt>
 File: img/img8.jpg Graphic file (type jpg)
 <use img/img8.jpg>
 Package pdftex.def Info: img/img8.jpg  used on input line 329.
 (pdftex.def)             Requested size: 217.66211pt x 120.52151pt.
-<img/img5.png, id=170, 1708.13156pt x 517.18219pt>
+<img/img5.png, id=180, 1708.13156pt x 517.18219pt>
 File: img/img5.png Graphic file (type png)
 <use img/img5.png>
 Package pdftex.def Info: img/img5.png  used on input line 340.
 (pdftex.def)             Requested size: 386.95897pt x 117.158pt.
-<img/img6.png, id=171, 1705.87312pt x 506.6428pt>
+<img/img6.png, id=181, 1705.87312pt x 506.6428pt>
 File: img/img6.png Graphic file (type png)
 <use img/img6.png>
 Package pdftex.def Info: img/img6.png  used on input line 347.
 (pdftex.def)             Requested size: 386.95897pt x 114.92513pt.
- [6 <./img/img7.jpg> <./img/img8.jpg> <./img/img5.png> <./img/img6.png>] [7] (A
-TRVC_group1_patch_report.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+
+ []
+
+[6 <./img/img7.jpg> <./img/img8.jpg> <./img/img5.png> <./img/img6.png>]
+<img/img10.png, id=191, 1671.99657pt x 557.83406pt>
+File: img/img10.png Graphic file (type png)
+<use img/img10.png>
+Package pdftex.def Info: img/img10.png  used on input line 358.
+(pdftex.def)             Requested size: 386.95897pt x 129.09924pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--364
+
+ []
+
+<img/img11.png, id=192, 593.21625pt x 564.60938pt>
+File: img/img11.png Graphic file (type png)
+<use img/img11.png>
+Package pdftex.def Info: img/img11.png  used on input line 369.
+(pdftex.def)             Requested size: 217.66211pt x 207.16191pt.
+[7 <./img/img10.png> <./img/img11.png>] [8] (ATRVC_group1_patch_report.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `ATRVC_group1_patch_report.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 213E51F23E10A8CAB1AF05D28C01C451;2430.
+(rerunfilecheck)             Checksum: 1B96D42E970ABFC224A21D105BCAD35E;2741.
  ) 
 Here is how much of TeX's memory you used:
- 53900 strings out of 475248
- 1363836 string characters out of 5757813
- 2041550 words of memory out of 5000000
- 74748 multiletter control sequences out of 15000+600000
+ 54007 strings out of 475248
+ 1365677 string characters out of 5757813
+ 2043673 words of memory out of 5000000
+ 74845 multiletter control sequences out of 15000+600000
  562445 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,103p,860b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1270,9 +1310,9 @@ fb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 sfonts/cm/cmsy5.pfb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy7.pfb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ATRVC_group1_patch_report.pdf (9 pages, 885371 bytes).
+Output written on ATRVC_group1_patch_report.pdf (10 pages, 951704 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
