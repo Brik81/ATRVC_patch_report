@@ -27,6 +27,7 @@
 \pgfplotsset{compat=1.18}
 \usepackage{nopageno}
 \usepackage{booktabs}
+\usepackage{float}
 %Grafica del foglio
 \geometry{a4paper, margin=2.0cm}
 \usetikzlibrary{math}
@@ -318,13 +319,13 @@ so, according to calculations, we will need two slots of approximately 9.2 mm in
 Following the calculation of the parameters of the patch, the initial simulation was conducted, as illustrated in the subsequent graphs.\\
 \begin{figure}[h]
 	\centering
-	\begin{minipage}{0.45\linewidth}
+	\begin{minipage}{0.4\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{img/img7}
 		\caption{S1,1 graphs representing the return loss of the patch antenna during the first simulation without slots}
 		\label{GSNOslot}
-	\end{minipage}\hfill
-	\begin{minipage}{0.45\linewidth}
+	\end{minipage}\hspace{0.1\linewidth}
+	\begin{minipage}{0.4\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{img/img8}
 		\caption{S1,1 graphs representing the return loss of the patch antenna during the first simulation without slots}
@@ -334,20 +335,21 @@ Following the calculation of the parameters of the patch, the initial simulation
 
 As depicted in Figure \eqref{GSNOslot}, the outcome of the simulation did not meet expectations, exhibiting a peak return loss of approximately -9.5 dB. The figure \eqref{GZNOslot} demonstrates that the microstrip is not entirely matched, exhibiting an impedance of 71.9 $\Omega$ in the real part and a value of approximately 50.8 $\Omega$ in the imaginary part. However, it is observed that the peak frequency falls within the 2.5\% tolerance stipulated by the specifications.
 \subsection{Simulation and result with slots}
-After this first simulation, the slots were inserted following the measurements from the theoretical calculations. As can be seen in the figures below, the result improved slightly to a peak of -15.2 dB (figure \eqref{GSslot}) and an impedance value of approximately 35.1 $\Omega$ in the real part and 0.14  $\Omega$  in the imaginary part (figure \eqref{GZslot}).
- \begin{figure}[h]
+After this first simulation, the slots were inserted following the measurements from the theoretical calculations. As can be seen in the figures below, the result improved slightly to a peak of -15.0 dB and at 2.6GHz we have the return loss equal to -13.0 dB (figure \eqref{GSslot}) and an impedance value of approximately 32.8 $\Omega$ in the real part and -6.5 $\Omega$  in the imaginary part (figure \eqref{GZslot}).
+ \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{img/img5}
+	\includegraphics[width=0.85\linewidth]{img/img5}
 	\caption{S1,1 graphs representing the return loss of the patch antenna with a slots of 9.2mm}
 	\label{GSslot}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{img/img6}
+	\includegraphics[width=0.85\linewidth]{img/img6}
 	\caption{Z1,1 graphs representing the impedance of the patch antenna with a slots of 9.2mm}
 	\label{GZslot}
 \end{figure}
+\newpage
  \subsection{Tuning of the patch antenna}
  Starting from the previous results, in order to improve the performance of the antenna, it was necessary to modify certain parameters, in particular the length of the slots, until a value was found that would allow the desired impedance to be achieved and get even closer to the frequency required by the specifications.\\
   In order to assess what was the best possible result, a sweep had to be made, simulating different slot lengths and finding the value that would satisfy the different requirements.\\
@@ -355,14 +357,14 @@ After this first simulation, the slots were inserted following the measurements 
   
   \begin{figure}[h]
   	\centering
-  	\includegraphics[width=0.8\linewidth]{img/img10}
-  	\caption{Graph representing the returnig loss of all different values of the slots tested}
+  	\includegraphics[width=1.0\linewidth]{img/img10}
+  	\caption{Graph representing the returning loss of all different values of the slots tested}
   	\label{GSsweep}
   \end{figure}
-  As can be seen from the image above, as the slot values were reduced, the peak of the return loss grew and grew until it reached its maximum value, which corresponds to a slot length of 7.6 mm.\\
-  With the final choice of slot, the design of the antenna patch is complete, below is the table (ref) containing the patch dimensions and a reference image.\\
+  As can be seen from the image above, as the slot values were reduced, the peak of the return loss grew and grew until it reached its maximum value, which corresponds to the brown graph, which correspond to a slot length of 7.6 mm.\\
+  With this choice, the design of the patch antenna is completed, below is reported the table \eqref{tab:patchDimensions} containing the patch dimensions with a reference image \eqref{RefPatch}.\\
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\begin{minipage}{0.45\linewidth}
 		\centering
@@ -394,7 +396,155 @@ After this first simulation, the slots were inserted following the measurements 
 \end{figure}
 
 \newpage
-\section{RESULTS AND MEASUREMENTS}
+\section{EXPERIMENTAL: RESULT AND MEASUREMENT}
 \subsection{Final simulation}
+After the design phase, in which the optimal measurements for the patch antenna were identified, a final simulation was carried out to acquire data that would then be compared with the actual measurements.\\
+Below are graphs of the three main measurements: return loss, impedance and VSWR.\\
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/S11_vs_freq_w_slots_small}
+		\caption{}
+		\label{fig:s11vsfreqwslotssmall}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/Z_vs_Freq_w_slots_small}
+		\caption{}
+		\label{fig:zvsfreqwslotssmall}
+	\end{minipage}
+	\\[1em] % Spazio tra le righe
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/VSWR_with_slot_small}
+		\caption{}
+		\label{fig:vswrwithslotsmall}
+	\end{minipage}
+\end{figure}
+
+As we can see from the theoretical values obtained for the patch, we have an excellent result, as we can see in figure  having a peak value of about -63 dB in the return loss and a about -20.8 dB at 2.6GHz.\\
+A second thing we can see is the impedance graph where, at the resonance frequency of our antenna, we have an impedance with a real part of about 50 $\Omega$ while the imaginary part is 2.98 $\Omega$, so is a negligible number.
+
+Another graph that can be appreciated is that of the VSWR, which is the ratio measuring the efficiency of impedance matching between the antenna and the transmission line; when this parameter has a value of 1, it indicates perfect matching and minimal reflections. As we can see in the picture, in this case the resonance frequency of our antenna is equal to 1.2, which means a very good matching that largely respects that required by the specifications. 
+The only thing is that in the simulation, the resonance frequency is not quite 2.6 GHz, but a value close enough that still allows to remain well within the required range.
+\subsection{Simulation with dummy car}
+Another type of simulation performed was using a 3D model of a vehicle to simulate the operation of the patch antenna.\\
+For this simulation, it was placed at the front of the car, obtaining the result shown in the next page: 
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.41\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/3D_farfield_front_car}
+		\caption{far-field 3D plot of the patch antenna with dummy car }
+		\label{3Ddummycar}
+	\end{minipage}\hspace{0.1\linewidth}
+	\begin{minipage}{0.40\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/3d_farfield_patchsolo}
+		\caption{far-field 3D plot of the patch antenna alone}
+		\label{3Dpatch}
+	\end{minipage}
+\end{figure}
+
+
+Above, we have in figure \eqref{3Ddummycar} the plot of the far field of our patch integrated in the front of the machine, while in figure \eqref{3Dpatch} we have the same plot but of the patch antenna alone, as can be seen from the analysis of these far-field radiation patterns reveals significant differences between the two radiation patterns.\\
+When placed in front of the vehicle, the radiation pattern becomes distorted, showing asymmetry, irregularities and additional side lobes. These distortions can be caused by several factors, for example: reflections, diffraction caused by the metal surfaces and edges of the vehicle redistribute the electromagnetic energy, interfering with the main lobe and creating unwanted secondary lobes, or perhaps the vehicle effectively extends the ground plane of the antenna, changing its impedance and radiation modes. 
+
+
+
+\subsection{Real Measurements}
+Once the desing was finished, the patch antenna was sent into production, the finished result is the one in the picture below:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.35\linewidth]{img/img12}
+	\caption{Real patch antenna produced according to the dimensions reported in the table \eqref{tab:patchDimensions}}
+	\label{realpatch}
+\end{figure}
+
+
+After obtaining the physical patch, measurements were carried out in the laboratory using a Horn antenna, a network analyzer and other supports, including a rotating tripod used to measure the radiation pattern.\\
+The measurement station is shown in the figure below:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{img/img13}
+	\caption{Measurement station composed by: horn antenna, patch antenna and a network analyzer (not present in the image)}
+	\label{MEASSTATION}
+\end{figure}
+
+The horn antenna and the patch antenna are connected to a network analyzer, which measures the electrical performance of radio-frequency components, such as antennas, by analyzing parameters like S11 to evaluate signal behavior and impedance matching.\\
+The horn antenna serves as a stationary receiver, leveraging its high bandwidth to detect the electromagnetic field radiated by the patch antenna during measurements.\\
+\subsubsection{Measurement of S11 and Matching Impedance}
+As a first measurement, after the proper calibration, the S11 of the antenna was measured, obtaining the real value of the return loss, from which the matching impedance can be determined.\\
+The graphs of the actual measurements are provided on the following page.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/S11_vs_freq_real_cropped}
+	\caption{S11 real measurement of the patch antenna}
+	\label{fig:s11vsfreqrealcropped}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/Z_vs_freq_real_data_cropped}
+	\caption{impedance values derived from real measurement }
+	\label{fig:zvsfreqrealdatacropped}
+\end{figure}
+
+From the graphs above, it can be seen that, compared to the simulated version, the peak is centered at 2.60 GHz instead of 2.58 GHz, with a value around -15 dB.\\
+This result, while acceptable, does not reach the excellence shown in the simulations. With regards to the impedance matching, it can be observed that at a frequency of 2.6 GHz, the real value is approximately 50 $\Omega$, while the imaginary part is around 20 $\Omega$. This indicates that the impedance matching is not optimal, as the imaginary component signifies a residual reactance that has the potential to influence the antenna's overall performance. Such a scenario could be attributed to manufacturing imperfections, mismatches, or parasitic effects that were not anticipated during the simulation process. 
+\subsubsection{Radiation Pattern Measurement}
+This was followed by a second measurement in which the radiation pattern was evaluated. For this purpose, the rotating tripod was used: the measurement was carried out and, with each measurement, the patch antenna was rotated by 2°; the procedure was then repeated by rotating the patch antenna by 90°, so that both the vertical (E-plane) and horizontal (H-plane) planes were evaluated.
+The measurements produced the following results: 
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.41\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/S12_vs_angle_rad_pattern_no_comp_eplane_small}
+		\caption{Radiation pattern of the vertical plane}
+		\label{Epln-solo}
+	\end{minipage}\hspace{0.1\linewidth}
+	\begin{minipage}{0.42\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{img/S12_vs_angle_rad_pattern_no_comp_hplane_small}
+		\caption{Radiation pattern of the horizontal plane}
+		\label{Hpln-solo}
+	\end{minipage}
+\end{figure}
+
+
+\newpage
+
+\begin{center}
+	 \captionsetup{type=table} % Cambia il tipo di didascalia a 'Table'
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Dimension} & \textbf{Theoretical Value (mm)} & \textbf{Measured Value (mm)} \\
+		\hline
+		Substrate Width, $W_s$ & 56.9 & 57.0\\
+		\hline
+		Substrate Length, $L_s$ & 56.9 & 57.0\\
+		\hline
+		Microstrip Width, $W_m$ & 3.2 & 3.2\\
+		\hline
+		Microstrip Length, $L_m$ & 14.4& 14.4\\
+		\hline
+		Distance, $D$ & 10.4 & 10.4\\
+		\hline
+		Slot Width, $W_i$ & 1.0 & 1.0\\
+		\hline
+		Slot Length, $L_i$ & 7.6 & 7.5\\
+		\hline
+		Patch Width, $W_p$ & 36.1 & 36.0\\
+		\hline
+		Patch Length, $L_p$ & 28.0 & 28.0\\
+		\hline
+	\end{tabular}
+	\caption{Table comparing the theoretical dimensions of the patch antenna and the measured of the real one}
+	\label{tab:COMPARINGREALANDTEOR}
+\end{center}
+
 	%FINE DOCUMENTO
 \end{document}

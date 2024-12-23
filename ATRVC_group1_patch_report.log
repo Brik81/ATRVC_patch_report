@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.27)  22 DEC 2024 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.27)  23 DEC 2024 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,53 +1078,61 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count340
 \@thisrulewidth=\dimen356
 )
+(C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count341
+\float@exts=\toks55
+\float@box=\box80
+\@float@everytoks=\toks56
+\@floatcapt=\box81
+)
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarymath.code.tex
-\tikz@math@for@depth=\count341
+\tikz@math@for@depth=\count342
 \tikz@math@dimen=\dimen357
-\tikz@math@toks=\toks55
+\tikz@math@toks=\toks57
 )
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count342
-\l__pdf_internal_box=\box80
+\l__color_backend_stack_int=\count343
+\l__pdf_internal_box=\box82
 ) (ATRVC_group1_patch_report.aux)
 \openout1 = `ATRVC_group1_patch_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
 
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
+\scratchcounter=\count344
 \scratchdimen=\dimen358
-\scratchbox=\box81
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count346
+\scratchbox=\box83
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count347
 \MPscratchDim=\dimen359
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
-\everyMPtoPDFconversion=\toks57
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks59
 )
 (C:\Users\alex2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1174,17 +1182,18 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 109.
+Package hyperref Info: Link coloring ON on input line 110.
 (ATRVC_group1_patch_report.out) (ATRVC_group1_patch_report.out)
 \@outlinefile=\write4
 \openout4 = `ATRVC_group1_patch_report.out'.
 
-<img/Muner_Color.png, id=74, 182.1204pt x 73.2336pt>
+<img/Muner_Color.png, id=90, 182.1204pt x 73.2336pt>
 File: img/Muner_Color.png Graphic file (type png)
 <use img/Muner_Color.png>
-Package pdftex.def Info: img/Muner_Color.png  used on input line 113.
+Package pdftex.def Info: img/Muner_Color.png  used on input line 114.
 (pdftex.def)             Requested size: 284.56798pt x 113.82152pt.
  [1
 
@@ -1199,98 +1208,187 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 	\newpage
+l.161 	\newpage
                 [1]
-<img/img1.jpg, id=116, 175.65625pt x 111.91812pt>
+<img/img1.jpg, id=136, 175.65625pt x 111.91812pt>
 File: img/img1.jpg Graphic file (type jpg)
 <use img/img1.jpg>
-Package pdftex.def Info: img/img1.jpg  used on input line 167.
+Package pdftex.def Info: img/img1.jpg  used on input line 168.
 (pdftex.def)             Requested size: 193.47578pt x 123.28108pt.
-<img/img2.png, id=117, 935.74594pt x 359.84438pt>
+<img/img2.png, id=137, 935.74594pt x 359.84438pt>
 File: img/img2.png Graphic file (type png)
 <use img/img2.png>
-Package pdftex.def Info: img/img2.png  used on input line 193.
+Package pdftex.def Info: img/img2.png  used on input line 194.
 (pdftex.def)             Requested size: 193.47578pt x 74.40001pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203 	\newpage
+l.204 	\newpage
                 [2 <./img/img1.jpg> <./img/img2.png>]
-<img/img3.png, id=130, 414.79968pt x 317.68687pt>
+<img/img3.png, id=150, 414.79968pt x 317.68687pt>
 File: img/img3.png Graphic file (type png)
 <use img/img3.png>
-Package pdftex.def Info: img/img3.png  used on input line 243.
+Package pdftex.def Info: img/img3.png  used on input line 244.
 (pdftex.def)             Requested size: 193.47578pt x 148.17853pt.
  [3 <./img/img3.png>]
 [4]
-<img/img4.png, id=160, 593.21625pt x 508.90125pt>
+<img/img4.png, id=180, 593.21625pt x 508.90125pt>
 File: img/img4.png Graphic file (type png)
 <use img/img4.png>
-Package pdftex.def Info: img/img4.png  used on input line 285.
+Package pdftex.def Info: img/img4.png  used on input line 286.
 (pdftex.def)             Requested size: 193.47578pt x 165.97333pt.
-<img/img9.png, id=163, 882.29625pt x 723.45282pt>
+<img/img9.png, id=183, 882.29625pt x 723.45282pt>
 File: img/img9.png Graphic file (type png)
 <use img/img9.png>
-Package pdftex.def Info: img/img9.png  used on input line 309.
+Package pdftex.def Info: img/img9.png  used on input line 310.
 (pdftex.def)             Requested size: 154.78653pt x 126.91522pt.
  [5 <./img/img4.png> <./img/img9.png>]
-<img/img7.jpg, id=174, 1204.5pt x 666.99188pt>
-File: img/img7.jpg Graphic file (type jpg)
-<use img/img7.jpg>
-Package pdftex.def Info: img/img7.jpg  used on input line 323.
-(pdftex.def)             Requested size: 217.66211pt x 120.52151pt.
-<img/img8.jpg, id=175, 1204.5pt x 666.99188pt>
-File: img/img8.jpg Graphic file (type jpg)
-<use img/img8.jpg>
-Package pdftex.def Info: img/img8.jpg  used on input line 329.
-(pdftex.def)             Requested size: 217.66211pt x 120.52151pt.
-<img/img5.png, id=180, 1708.13156pt x 517.18219pt>
+<img/img7.png, id=194, 738.50906pt x 514.92375pt>
+File: img/img7.png Graphic file (type png)
+<use img/img7.png>
+Package pdftex.def Info: img/img7.png  used on input line 324.
+(pdftex.def)             Requested size: 193.47578pt x 134.89844pt.
+<img/img8.png, id=195, 632.3625pt x 474.27188pt>
+File: img/img8.png Graphic file (type png)
+<use img/img8.png>
+Package pdftex.def Info: img/img8.png  used on input line 330.
+(pdftex.def)             Requested size: 193.47578pt x 145.10501pt.
+<img/img5.png, id=200, 1222.5675pt x 347.79938pt>
 File: img/img5.png Graphic file (type png)
 <use img/img5.png>
-Package pdftex.def Info: img/img5.png  used on input line 340.
-(pdftex.def)             Requested size: 386.95897pt x 117.158pt.
-<img/img6.png, id=181, 1705.87312pt x 506.6428pt>
+Package pdftex.def Info: img/img5.png  used on input line 341.
+(pdftex.def)             Requested size: 411.14528pt x 116.96062pt.
+<img/img6.png, id=201, 1280.53406pt x 362.85562pt>
 File: img/img6.png Graphic file (type png)
 <use img/img6.png>
-Package pdftex.def Info: img/img6.png  used on input line 347.
-(pdftex.def)             Requested size: 386.95897pt x 114.92513pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--354
+Package pdftex.def Info: img/img6.png  used on input line 348.
+(pdftex.def)             Requested size: 411.14528pt x 116.50374pt.
+ [6 <./img/img7.png (PNG copy)> <./img/img8.png (PNG copy)> <./img/img5.png (PN
+G copy)> <./img/img6.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 
  []
 
-[6 <./img/img7.jpg> <./img/img8.jpg> <./img/img5.png> <./img/img6.png>]
-<img/img10.png, id=191, 1671.99657pt x 557.83406pt>
+<img/img10.png, id=209, 1930.21124pt x 640.64343pt>
 File: img/img10.png Graphic file (type png)
 <use img/img10.png>
-Package pdftex.def Info: img/img10.png  used on input line 358.
-(pdftex.def)             Requested size: 386.95897pt x 129.09924pt.
+Package pdftex.def Info: img/img10.png  used on input line 360.
+(pdftex.def)             Requested size: 483.69687pt x 160.5417pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
-<img/img11.png, id=192, 593.21625pt x 564.60938pt>
+<img/img11.png, id=212, 593.21625pt x 564.60938pt>
 File: img/img11.png Graphic file (type png)
 <use img/img11.png>
-Package pdftex.def Info: img/img11.png  used on input line 369.
+Package pdftex.def Info: img/img11.png  used on input line 371.
 (pdftex.def)             Requested size: 217.66211pt x 207.16191pt.
-[7 <./img/img10.png> <./img/img11.png>] [8] (ATRVC_group1_patch_report.aux)
+[7 <./img/img10.png (PNG copy)> <./img/img11.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+<img/S11_vs_freq_w_slots_small.png, id=221, 824.32968pt x 495.35063pt>
+File: img/S11_vs_freq_w_slots_small.png Graphic file (type png)
+<use img/S11_vs_freq_w_slots_small.png>
+Package pdftex.def Info: img/S11_vs_freq_w_slots_small.png  used on input line 
+408.
+(pdftex.def)             Requested size: 232.17242pt x 139.51353pt.
+<img/Z_vs_Freq_w_slots_small.png, id=222, 798.73407pt x 470.50781pt>
+File: img/Z_vs_Freq_w_slots_small.png Graphic file (type png)
+<use img/Z_vs_Freq_w_slots_small.png>
+Package pdftex.def Info: img/Z_vs_Freq_w_slots_small.png  used on input line 41
+5.
+(pdftex.def)             Requested size: 232.17242pt x 136.76683pt.
+<img/VSWR_with_slot_small.png, id=223, 632.3625pt x 474.27188pt>
+File: img/VSWR_with_slot_small.png Graphic file (type png)
+<use img/VSWR_with_slot_small.png>
+Package pdftex.def Info: img/VSWR_with_slot_small.png  used on input line 422.
+(pdftex.def)             Requested size: 232.17242pt x 174.12456pt.
+<img/3D_farfield_front_car.png, id=224, 438.13687pt x 268.75406pt>
+File: img/3D_farfield_front_car.png Graphic file (type png)
+<use img/3D_farfield_front_car.png>
+Package pdftex.def Info: img/3D_farfield_front_car.png  used on input line 440.
+
+(pdftex.def)             Requested size: 198.31747pt x 121.64764pt.
+<img/3d_farfield_patchsolo.png, id=225, 283.81032pt x 265.74281pt>
+File: img/3d_farfield_patchsolo.png Graphic file (type png)
+<use img/3d_farfield_patchsolo.png>
+Package pdftex.def Info: img/3d_farfield_patchsolo.png  used on input line 446.
+
+(pdftex.def)             Requested size: 193.47578pt x 181.16498pt.
+[8 <./img/S11_vs_freq_w_slots_small.png (PNG copy)> <./img/Z_vs_Freq_w_slots_sm
+all.png (PNG copy)> <./img/VSWR_with_slot_small.png (PNG copy)>]
+<img/img12.png, id=233, 610.53094pt x 666.99188pt>
+File: img/img12.png Graphic file (type png)
+<use img/img12.png>
+Package pdftex.def Info: img/img12.png  used on input line 462.
+(pdftex.def)             Requested size: 169.29684pt x 184.95503pt.
+<img/img13.png, id=236, 265.49188pt x 159.59625pt>
+File: img/img13.png Graphic file (type png)
+<use img/img13.png>
+Package pdftex.def Info: img/img13.png  used on input line 472.
+(pdftex.def)             Requested size: 241.84843pt x 145.38622pt.
+ [9 <./img/3D_farfield_front_car.png> <./img/3d_farfield_patchsolo.png> <./img/
+img12.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 477--479
+
+ []
+
+<img/S11_vs_freq_real_cropped.png, id=246, 990.70125pt x 411.78844pt>
+File: img/S11_vs_freq_real_cropped.png Graphic file (type png)
+<use img/S11_vs_freq_real_cropped.png>
+Package pdftex.def Info: img/S11_vs_freq_real_cropped.png  used on input line 4
+84.
+(pdftex.def)             Requested size: 338.58632pt x 140.73508pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--487
+
+ []
+
+<img/Z_vs_freq_real_data_cropped.png, id=247, 985.43156pt x 377.15906pt>
+File: img/Z_vs_freq_real_data_cropped.png Graphic file (type png)
+<use img/Z_vs_freq_real_data_cropped.png>
+Package pdftex.def Info: img/Z_vs_freq_real_data_cropped.png  used on input lin
+e 491.
+(pdftex.def)             Requested size: 338.58632pt x 129.59056pt.
+[10 <./img/img13.png> <./img/S11_vs_freq_real_cropped.png (PNG copy)> <./img/Z_
+vs_freq_real_data_cropped.png (PNG copy)>]
+<img/S12_vs_angle_rad_pattern_no_comp_eplane_small.png, id=256, 632.3625pt x 47
+4.27188pt>
+File: img/S12_vs_angle_rad_pattern_no_comp_eplane_small.png Graphic file (type 
+png)
+<use img/S12_vs_angle_rad_pattern_no_comp_eplane_small.png>
+Package pdftex.def Info: img/S12_vs_angle_rad_pattern_no_comp_eplane_small.png 
+ used on input line 505.
+(pdftex.def)             Requested size: 198.31747pt x 148.73788pt.
+<img/S12_vs_angle_rad_pattern_no_comp_hplane_small.png, id=257, 632.3625pt x 47
+4.27188pt>
+File: img/S12_vs_angle_rad_pattern_no_comp_hplane_small.png Graphic file (type 
+png)
+<use img/S12_vs_angle_rad_pattern_no_comp_hplane_small.png>
+Package pdftex.def Info: img/S12_vs_angle_rad_pattern_no_comp_hplane_small.png 
+ used on input line 511.
+(pdftex.def)             Requested size: 203.1518pt x 152.36351pt.
+ [11 <./img/S12_vs_angle_rad_pattern_no_comp_eplane_small.png (PNG copy)> <./im
+g/S12_vs_angle_rad_pattern_no_comp_hplane_small.png (PNG copy)>] [12] (ATRVC_gr
+oup1_patch_report.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `ATRVC_group1_patch_report.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 1B96D42E970ABFC224A21D105BCAD35E;2741.
+(rerunfilecheck)             Checksum: 2ED03C8C225E297751F3C08D853FACD2;3649.
  ) 
 Here is how much of TeX's memory you used:
- 54007 strings out of 475248
- 1365677 string characters out of 5757813
- 2043673 words of memory out of 5000000
- 74845 multiletter control sequences out of 15000+600000
+ 54213 strings out of 475248
+ 1371634 string characters out of 5757813
+ 2046032 words of memory out of 5000000
+ 75031 multiletter control sequences out of 15000+600000
  562445 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,103p,860b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1310,9 +1408,9 @@ fb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 sfonts/cm/cmsy5.pfb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy7.pfb><C:/Users/alex2/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ATRVC_group1_patch_report.pdf (10 pages, 951704 bytes).
+Output written on ATRVC_group1_patch_report.pdf (14 pages, 2491411 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
