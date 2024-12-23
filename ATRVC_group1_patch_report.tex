@@ -466,7 +466,7 @@ Once the desing was finished, the patch antenna was sent into production, the fi
 
 
 After obtaining the physical patch, measurements were carried out in the laboratory using a Horn antenna, a network analyzer and other supports, including a rotating tripod used to measure the radiation pattern.\\
-The measurement station is shown in the figure below:
+The measurement station is shown in the figure \eqref{MEASSTATION} in the next page:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{img/img13}
@@ -474,23 +474,23 @@ The measurement station is shown in the figure below:
 	\label{MEASSTATION}
 \end{figure}
 
-The horn antenna and the patch antenna are connected to a network analyzer, which measures the electrical performance of radio-frequency components, such as antennas, by analyzing parameters like S11 to evaluate signal behavior and impedance matching.\\
+The horn and the patch antennas are connected to a network analyzer, which measures the electrical performances of radio-frequency components, such as S11 to evaluate signal behavior and impedance matching.\\
 The horn antenna serves as a stationary receiver, leveraging its high bandwidth to detect the electromagnetic field radiated by the patch antenna during measurements.\\
 \subsubsection{Measurement of S11 and Matching Impedance}
 As a first measurement, after the proper calibration, the S11 of the antenna was measured, obtaining the real value of the return loss, from which the matching impedance can be determined.\\
-The graphs of the actual measurements are provided on the following page.\\
+The following graphs \eqref{s11vsfreqrealcropped} and \eqref{zvsfreqrealdatacropped} represent the real value measured of the antenna: 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{img/S11_vs_freq_real_cropped}
 	\caption{S11 real measurement of the patch antenna}
-	\label{fig:s11vsfreqrealcropped}
+	\label{s11vsfreqrealcropped}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{img/Z_vs_freq_real_data_cropped}
 	\caption{impedance values derived from real measurement }
-	\label{fig:zvsfreqrealdatacropped}
+	\label{zvsfreqrealdatacropped}
 \end{figure}
 
 From the graphs above, it can be seen that, compared to the simulated version, the peak is centered at 2.60 GHz instead of 2.58 GHz, with a value around -15 dB.\\
@@ -513,9 +513,21 @@ The measurements produced the following results:
 		\label{Hpln-solo}
 	\end{minipage}
 \end{figure}
+\section{RESULT COMPARISON}
+Below are reported the graphs comparing the measured values with those obtained from simulations:
+\begin{figure}[h]
+	\centering
+	\subfloat[Comparison between the return loss simulated (pink) and measured (red)]{\includegraphics[width=0.45\linewidth]{img/COMPARISON/S11_vs_freq_comparison_real_simulated} \label{fig:s11vsfreqcomparisonrealsimulated}} \hspace{0.5cm}
+	\subfloat[Comparison between simulated impedance (blue) and measured (red)]{\includegraphics[width=0.45\linewidth]{img/COMPARISON/Z_vs_freq_comparison_cropped} \label{fig:zvsfreqcomparisoncropped}} \\
+	\subfloat[Comparison between the vertical plane simulated (blue) and meausred (red)]{\includegraphics[width=0.40\linewidth]{img/COMPARISON/S12_vs_angle_rad_pattern_eplane_small} \label{fig:s12vsangleradpatterneplanesmall}} \hspace{0.5cm}
+	\subfloat[Comparison between the horizontal plane simulated (blue) and meausred (red)]{\includegraphics[width=0.40\linewidth]{img/COMPARISON/S12_vs_angle_rad_pattern_hplane_small} \label{fig:s12vsangleradpatterneplanesmall2}}
+	
+	\label{fig:2x2images}
+\end{figure}
 
 
 \newpage
+
 
 \begin{center}
 	 \captionsetup{type=table} % Cambia il tipo di didascalia a 'Table'
