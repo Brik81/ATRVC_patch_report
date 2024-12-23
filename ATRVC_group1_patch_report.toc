@@ -20,3 +20,5 @@
 \contentsline {subsubsection}{\numberline {5.3.1}Measurement of S11 and Matching Impedance}{10}{subsubsection.5.3.1}%
 \contentsline {subsubsection}{\numberline {5.3.2}Radiation Pattern Measurement}{11}{subsubsection.5.3.2}%
 \contentsline {section}{\numberline {6}RESULT COMPARISON}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Summary of results}{12}{subsection.6.1}%
+\contentsline {section}{\numberline {7}CONCLUSIONS}{12}{section.7}%

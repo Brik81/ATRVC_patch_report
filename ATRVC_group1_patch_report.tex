@@ -515,7 +515,7 @@ The measurements produced the following results:
 \end{figure}
 \section{RESULT COMPARISON}
 Below are reported the graphs comparing the measured values with those obtained from simulations:
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\subfloat[Comparison between the return loss simulated (pink) and measured (red)]{\includegraphics[width=0.45\linewidth]{img/COMPARISON/S11_vs_freq_comparison_real_simulated} \label{fig:s11vsfreqcomparisonrealsimulated}} \hspace{0.5cm}
 	\subfloat[Comparison between simulated impedance (blue) and measured (red)]{\includegraphics[width=0.45\linewidth]{img/COMPARISON/Z_vs_freq_comparison_cropped} \label{fig:zvsfreqcomparisoncropped}} \\
@@ -524,20 +524,25 @@ Below are reported the graphs comparing the measured values with those obtained 
 	
 	\label{fig:2x2images}
 \end{figure}
-
-
-\newpage
-
-
+As can be seen from the superimposed graphs, as far as return loss and impedance are concerned, as mentioned earlier, there was a reduction in the S11 peak from -63dB to -15dB and an increase in the imaginary impedance from about 2 $\Omega$ to about 20 $\Omega$.
+The comparison between the measured and simulated radiation patterns shows notable differences for the E-plane and H-plane. In the E-plane (vertical), the simulated pattern closely matches the measured one, showing good accuracy in predicting the behaviour of the antenna. Minor discrepancies are observed in the side lobes and parts of the main lobe, where the simulated pattern appears smoother than the measured data.
+In the H-plane (horizontal) the discrepancies are more pronounced. The measured pattern shows more irregularities, with stronger and less symmetrical side lobes compared to the simulation, possible causes of all these differences, both in the parameters and in the radiation patterns, can be: tolerances in the board manufacture, irregularities in the materials used, coupling with adjacent objects or reflections during the measurement phase.\\
+To solve these problems and improve antenna performance, one could: 
+\begin{itemize}
+	\item \textbf{Vary the patch dimensions}: Adjusting not only the slots length but also the slots width or the overall patch size could help fine-tune the resonant frequency and improve impedance matching
+	\item \textbf{Optimize the test environment}: Perform measurements in a more open environment to reduce the risk of interference, or ideally, in an Anechoic chamber to eliminate reflections and ensure more accurate radiation pattern measurements
+\end{itemize}
+\subsection{Summary of results}
+The following tables summarize the results of the patch antenna analysis. The first table (table \eqref{tabmeasure}) compares the analytical values with those obtained during the simulation, aimed at optimizing the antenna design. The second table (table \eqref{tabS11}) highlights the differences between the final simulated values and the measured results.
 \begin{center}
 	 \captionsetup{type=table} % Cambia il tipo di didascalia a 'Table'
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{Dimension} & \textbf{Theoretical Value (mm)} & \textbf{Measured Value (mm)} \\
+		\textbf{Dimension} & \textbf{Analytical Value (mm)} & \textbf{Final Value (mm)} \\
 		\hline
-		Substrate Width, $W_s$ & 56.9 & 57.0\\
+		Substrate Width, $W_s$ & 56.9 & 56.9\\
 		\hline
-		Substrate Length, $L_s$ & 56.9 & 57.0\\
+		Substrate Length, $L_s$ & 56.9 & 56.9\\
 		\hline
 		Microstrip Width, $W_m$ & 3.2 & 3.2\\
 		\hline
@@ -547,16 +552,33 @@ Below are reported the graphs comparing the measured values with those obtained 
 		\hline
 		Slot Width, $W_i$ & 1.0 & 1.0\\
 		\hline
-		Slot Length, $L_i$ & 7.6 & 7.5\\
+		Slot Length, $L_i$ & 9.2 & 7.6\\
 		\hline
-		Patch Width, $W_p$ & 36.1 & 36.0\\
+		Patch Width, $W_p$ & 36.1 & 36.1\\
 		\hline
 		Patch Length, $L_p$ & 28.0 & 28.0\\
 		\hline
 	\end{tabular}
-	\caption{Table comparing the theoretical dimensions of the patch antenna and the measured of the real one}
-	\label{tab:COMPARINGREALANDTEOR}
+	\caption{Table comparing the analytic dimensions of the patch antenna and the final ones}
+	\label{tabmeasure}
 \end{center}
-
+\begin{center}
+	\captionsetup{type=table} % Cambia il tipo di didascalia a 'Table'
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Parameter} & \textbf{Simulated Value} & \textbf{Measured Value} \\
+		\hline
+		Resonance Frequency & 2.588 GHz & 2.620 GHz\\
+		\hline
+		Return Loss & -63.05 dB & -15.05 dB\\
+		\hline
+		Impedance & $50 + j2.98 \, \Omega$ & $50.14 + j20.03 \, \Omega$\\
+			\hline
+	\end{tabular}
+	\caption{Table comparing the simulated values and the real measured ones}
+	\label{tabS11}
+\end{center}
+\section{CONCLUSIONS}
+The aim of the laboratory experience was to create a patch antenna that met certain requirements, which allowed us to put some theoretical concepts into practice and to practice with the CST software and some laboratory instruments, allowing us to make real measurements.\\ Unfortunately, some real results, although within the required specifications, did not match the simulation results, which allowed us to think about possible causes and future implementations or solutions to further improve our patch antenna.
 	%FINE DOCUMENTO
 \end{document}
